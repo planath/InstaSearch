@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8150" systemVersion="15A204g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8122"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -13,15 +16,83 @@
                         <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="instaSearchInverted" translatesAutoresizingMaskIntoConstraints="NO" id="XeB-uU-wAE">
+                                <rect key="frame" x="0.0" y="62" width="414" height="414"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="XeB-uU-wAE" secondAttribute="height" multiplier="1:1" id="UOw-Lh-NeY"/>
+                                </constraints>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yvP-fz-1xl">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="0GN-aS-Wq1">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Andreas N. Plüss" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wwy-hn-5Qz">
+                                            <rect key="frame" x="142" y="659" width="130" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="130" id="GBV-mT-S76"/>
+                                                <constraint firstAttribute="height" constant="21" id="SUm-pS-YWE"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleCaption2"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Matthias Käser" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qWF-Hv-QAj">
+                                            <rect key="frame" x="150" y="688" width="114" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="FbJ-xQ-giT"/>
+                                                <constraint firstAttribute="width" constant="114" id="qNG-bP-GAn"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleCaption2"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MOBA2 P1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jYx-ja-2wk">
+                                            <rect key="frame" x="166" y="603" width="82" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="80d-Ro-fPR"/>
+                                                <constraint firstAttribute="width" constant="82" id="yZV-d3-TYf"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Wwy-hn-5Qz" firstAttribute="top" secondItem="jYx-ja-2wk" secondAttribute="bottom" constant="35" id="3KD-7m-Qic"/>
+                                        <constraint firstItem="qWF-Hv-QAj" firstAttribute="top" secondItem="Wwy-hn-5Qz" secondAttribute="bottom" constant="8" id="5jl-Vl-aw8"/>
+                                        <constraint firstItem="Wwy-hn-5Qz" firstAttribute="centerX" secondItem="0GN-aS-Wq1" secondAttribute="centerX" id="J3x-5o-UGe"/>
+                                        <constraint firstItem="jYx-ja-2wk" firstAttribute="centerX" secondItem="0GN-aS-Wq1" secondAttribute="centerX" id="Oh7-Tz-FE5"/>
+                                        <constraint firstItem="qWF-Hv-QAj" firstAttribute="centerX" secondItem="0GN-aS-Wq1" secondAttribute="centerX" id="qVx-Py-2Pd"/>
+                                        <constraint firstAttribute="bottom" secondItem="qWF-Hv-QAj" secondAttribute="bottom" constant="27" id="z55-2d-usb"/>
+                                    </constraints>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yvP-fz-1xl" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="-20" id="7Vl-1C-IwG"/>
+                            <constraint firstItem="XeB-uU-wAE" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="-20" id="DWm-rO-c4A"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="yvP-fz-1xl" secondAttribute="bottom" id="NzR-YX-h4Z"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="XeB-uU-wAE" secondAttribute="trailing" constant="-20" id="Uu6-gb-Mix"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="yvP-fz-1xl" secondAttribute="trailing" constant="-20" id="Y1B-lX-GPu"/>
+                            <constraint firstItem="XeB-uU-wAE" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="42" id="hG2-pg-eVp"/>
+                            <constraint firstItem="yvP-fz-1xl" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" id="yEO-y3-8eA"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="instaSearchInverted" width="1024" height="1024"/>
+    </resources>
 </document>

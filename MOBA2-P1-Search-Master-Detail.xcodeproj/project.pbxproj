@@ -15,6 +15,12 @@
 		E15413681C7B5BC60072BC0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E15413661C7B5BC60072BC0D /* LaunchScreen.storyboard */; };
 		E15413731C7B5BC60072BC0D /* MOBA2_P1_Search_Master_DetailTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15413721C7B5BC60072BC0D /* MOBA2_P1_Search_Master_DetailTests.swift */; };
 		E154137E1C7B5BC60072BC0D /* MOBA2_P1_Search_Master_DetailUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E154137D1C7B5BC60072BC0D /* MOBA2_P1_Search_Master_DetailUITests.swift */; };
+		E154138C1C7B5FBA0072BC0D /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E154138B1C7B5FBA0072BC0D /* SearchViewController.swift */; };
+		E154138E1C7B62210072BC0D /* InstaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E154138D1C7B62210072BC0D /* InstaTableViewCell.swift */; };
+		E15413901C7B66490072BC0D /* InstaPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = E154138F1C7B66490072BC0D /* InstaPost.swift */; };
+		E15413941C7B6E410072BC0D /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15413911C7B6E410072BC0D /* Api.swift */; };
+		E15413951C7B6E410072BC0D /* GetJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15413921C7B6E410072BC0D /* GetJson.swift */; };
+		E15413961C7B6E410072BC0D /* ParseMedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15413931C7B6E410072BC0D /* ParseMedia.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,12 @@
 		E15413791C7B5BC60072BC0D /* MOBA2-P1-Search-Master-DetailUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MOBA2-P1-Search-Master-DetailUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E154137D1C7B5BC60072BC0D /* MOBA2_P1_Search_Master_DetailUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOBA2_P1_Search_Master_DetailUITests.swift; sourceTree = "<group>"; };
 		E154137F1C7B5BC60072BC0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E154138B1C7B5FBA0072BC0D /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		E154138D1C7B62210072BC0D /* InstaTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstaTableViewCell.swift; sourceTree = "<group>"; };
+		E154138F1C7B66490072BC0D /* InstaPost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstaPost.swift; sourceTree = "<group>"; };
+		E15413911C7B6E410072BC0D /* Api.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		E15413921C7B6E410072BC0D /* GetJson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetJson.swift; sourceTree = "<group>"; };
+		E15413931C7B6E410072BC0D /* ParseMedia.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseMedia.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,8 +112,14 @@
 			isa = PBXGroup;
 			children = (
 				E154135B1C7B5BC60072BC0D /* AppDelegate.swift */,
+				E154138B1C7B5FBA0072BC0D /* SearchViewController.swift */,
 				E154135D1C7B5BC60072BC0D /* MasterViewController.swift */,
 				E154135F1C7B5BC60072BC0D /* DetailViewController.swift */,
+				E154138D1C7B62210072BC0D /* InstaTableViewCell.swift */,
+				E154138F1C7B66490072BC0D /* InstaPost.swift */,
+				E15413911C7B6E410072BC0D /* Api.swift */,
+				E15413921C7B6E410072BC0D /* GetJson.swift */,
+				E15413931C7B6E410072BC0D /* ParseMedia.swift */,
 				E15413611C7B5BC60072BC0D /* Main.storyboard */,
 				E15413641C7B5BC60072BC0D /* Assets.xcassets */,
 				E15413661C7B5BC60072BC0D /* LaunchScreen.storyboard */,
@@ -196,6 +214,7 @@
 				TargetAttributes = {
 					E15413571C7B5BC60072BC0D = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = P93MCDR2XJ;
 					};
 					E154136D1C7B5BC60072BC0D = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -261,6 +280,12 @@
 			files = (
 				E15413601C7B5BC60072BC0D /* DetailViewController.swift in Sources */,
 				E154135E1C7B5BC60072BC0D /* MasterViewController.swift in Sources */,
+				E15413951C7B6E410072BC0D /* GetJson.swift in Sources */,
+				E154138C1C7B5FBA0072BC0D /* SearchViewController.swift in Sources */,
+				E15413961C7B6E410072BC0D /* ParseMedia.swift in Sources */,
+				E15413901C7B66490072BC0D /* InstaPost.swift in Sources */,
+				E154138E1C7B62210072BC0D /* InstaTableViewCell.swift in Sources */,
+				E15413941C7B6E410072BC0D /* Api.swift in Sources */,
 				E154135C1C7B5BC60072BC0D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -401,10 +426,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "MOBA2-P1-Search-Master-Detail/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "kitchen.dev.MOBA2-P1-Search-Master-Detail";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -412,10 +440,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "MOBA2-P1-Search-Master-Detail/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "kitchen.dev.MOBA2-P1-Search-Master-Detail";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
