@@ -21,6 +21,7 @@ class MasterViewController: UITableViewController {
         // Do any additional setup after loading the view, typically from a nib.
         self.title = "loading..."
         self.navigationController?.navigationBar.tintColor = UIColor.whiteColor()
+        tableView.rowHeight = 180
         
         GetJson.eachInstaPostFrom(Api.urlWithTag(query)) { (result) -> () in
             if result != nil {
